@@ -1,3 +1,107 @@
 /*
  * Estilos de tu proyecto
  */
+ * {
+   box-sizing: border-box;
+   margin:0;
+   padding: 0;
+   color: #fff;
+ }
+ h1:first-child{
+   cursor: pointer;
+ }
+ .float-left {
+   float: left;
+ }
+ .float-right {
+   float: right;
+ }
+ .container {
+   width: 100%;
+   margin: 0px auto;
+   max-width: 1200px;
+   border: 1px solid blue;
+   padding: 7px;
+ }
+ .container-fluid {
+   width: 100%;
+   background: #2C3E50;
+
+ }
+ .overflow{
+   overflow: auto;
+ }
+  .row:before, .row:after {
+      content: " ";
+      display: table;
+  }
+  .row:after {
+      clear: both;
+  }
+  [class*="col-"] {
+      min-height: 7px;
+      padding: 7px;
+      float: left;
+  }
+  .col-1 {
+      width: 8.33333%;
+  }
+  .col-2 {
+      width: 16.666667%;
+  }
+  .col-3 {
+      width: 25%;
+  }
+  .col-4 {
+      width: 33.333333%;
+  }
+  .col-5 {
+      width: 41.666667%;
+  }
+  .col-6 {
+      width: 50%;
+  }
+  .col-7 {
+      width: 58.333333%;
+  }
+  .col-8 {
+      width: 66.666667%;
+  }
+  .col-9 {
+      width: 75%;
+  }
+  .col-10 {
+      width: 83.3333%
+  }
+  .col-11 {
+    width: 91.63%
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+/* Header */
+header {
+  position: fixed;
+}
+
+.nav-header {
+  float: right;
+}
+ul > li{
+  display: inline-block;
+  list-style: none;
+  padding: 7px;
+}
+li > a {
+  text-decoration: none;
+}
+/* BANNER */
+#banner {
+  background: #18BC9C;
+  position: relative;
+  top: 53px;
+}
+.banner-content {
+  text-align: center;
+}
