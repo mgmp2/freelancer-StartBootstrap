@@ -16,7 +16,6 @@
    width: 100%;
    margin: 0px auto;
    max-width: 1200px;
-   border: 1px solid blue;
    padding: 14px;
  }
  .container-fluid {
@@ -93,10 +92,14 @@ header * {
 .nav-header {
   float: right;
 }
+.nav-header >ul > li:hover {
+  background: #2c3e50;
+}
 ul > li{
   display: inline-block;
   list-style: none;
   padding: 7px;
+
 }
 li > a {
   text-decoration: none;
@@ -111,7 +114,6 @@ hr {
   position: relative;
   top: 53px;
   padding: 14px 0;
-  z-index: -1;
 }
 #banner {
   background: #18BC9C;
@@ -126,10 +128,50 @@ hr {
 #portfolio * {
   text-align: center;
 }
-#portfolio img{
+#portfolio img, span{
   display: block;
   max-width: 100%;
+
   height: auto;
+}
+#portfolio .square {
+  position: relative;
+}
+#portfolio .square span {
+  top: 0;
+  width: 348px;
+  height: 251px;
+  display: flex;
+  position: absolute;
+}
+#portfolio .square span > p {
+  visibility: hidden;
+  align-self: center;
+  flex: 1;
+  font-size: 49px;
+  color: #fff;
+
+}
+.visible {
+  visibility: visible!important;
+}
+#portfolio .square span:hover{
+
+  background: rgba(24, 187, 156, 0.76);
+  transition: all 0.5s;
+}
+/*MODAL*/
+
+.modal {
+  display: block;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 1
 }
 /*ABOUT */
 #about {
