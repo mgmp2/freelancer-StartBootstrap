@@ -162,6 +162,9 @@ hr {
 }
 /*MODAL*/
 
+.d-hidden {
+  display: none;
+}
 .modal {
   display: block;
   position: fixed;
@@ -173,6 +176,19 @@ hr {
   height: 100%;
   z-index: 1
 }
+
+.close > span {
+  font-size: 49px;
+  float: right;
+  cursor: pointer;
+}
+#modal .row img {
+  width: 50%;
+}
+.modal * {
+  text-align: center;
+}
+
 /*ABOUT */
 #about {
   background: gray;

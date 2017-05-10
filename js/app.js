@@ -13,7 +13,18 @@ for(var i= 0 ; i< p.length; i++){
   });
 }
 
+var row = document.getElementById("js-row");
+var column = document.createElement("div");
 function screenSize(){
   document.getElementById("modal").firstElementChild.classList.add("modal");
-  console.log(this.previousElementSibling);
+  document.getElementById("body").classList.add("overflow");
+  // console.log(this.previousElementSibling);
+  column.setAttribute("class", "col-12");
+  column.appendChild(this.previousElementSibling);
+  row.appendChild(column);
+
 }
+
+document.getElementById("js-modal").addEventListener("click", function(e){
+  e.toggle("modal");
+});
