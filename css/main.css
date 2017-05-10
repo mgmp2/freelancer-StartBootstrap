@@ -1,11 +1,7 @@
-/*
- * Estilos de tu proyecto
- */
  * {
    box-sizing: border-box;
    margin:0;
    padding: 0;
-   color: #fff;
  }
  h1:first-child{
    cursor: pointer;
@@ -21,7 +17,7 @@
    margin: 0px auto;
    max-width: 1200px;
    border: 1px solid blue;
-   padding: 7px;
+   padding: 14px;
  }
  .container-fluid {
    width: 100%;
@@ -29,19 +25,25 @@
 
  }
  .overflow{
-   overflow: auto;
+   overflow: hidden;
+ }
+ .square {
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
  }
   .row:before, .row:after {
-      content: " ";
-      display: table;
+    content: " ";
+    display: table;
   }
   .row:after {
       clear: both;
   }
   [class*="col-"] {
       min-height: 7px;
-      padding: 7px;
+      padding: 21px;
       float: left;
+      height: auto;
   }
   .col-1 {
       width: 8.33333%;
@@ -83,8 +85,11 @@
 /* Header */
 header {
   position: fixed;
+  z-index: 1
 }
-
+header * {
+  color: #fff
+}
 .nav-header {
   float: right;
 }
@@ -97,11 +102,52 @@ li > a {
   text-decoration: none;
 }
 /* BANNER */
-#banner {
-  background: #18BC9C;
+hr {
+  display: inline-block;
+  border-color: #fff;
+  width: 140px;
+}
+#banner, #portfolio, #about, #contact, footer {
   position: relative;
   top: 53px;
+  padding: 14px 0;
+  z-index: -1;
 }
-.banner-content {
+#banner {
+  background: #18BC9C;
+
+}
+#banner * {
+  color: #fff;
+  text-align: center
+}
+
+/* PORTFOLIO */
+#portfolio * {
+  text-align: center;
+}
+#portfolio img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*ABOUT */
+#about {
+  background: gray;
+}
+#about * {
+  text-align: center;
+  color: #fff;
+}
+#about > .container {
+  width: 65%;
+}
+.col-12 [type="button"] {
+  width: 202px;
+  height: 56px;
+  font-size: 20px;
+}
+/*CONTACT ME */
+#contact * {
   text-align: center;
 }
