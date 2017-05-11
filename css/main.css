@@ -9,6 +9,9 @@
  font-family: 'Montserrat', sans-serif;
  font-weight: bold;
 }
+h2 {
+  font-size: 42px;
+}
  h1:first-child{
    cursor: pointer;
  }
@@ -214,6 +217,36 @@ hr {
 /*CONTACT ME */
 #contact * {
   text-align: center;
+}
+#contact .row .col-12 {
+  position: relative;
+}
+#contact .row .col-12 label {
+  position: absolute;
+top: 0;
+color: green;
+transition: top 1s ease,opacity .3s ease;
+}
+#contact [type="text"], [name="textarea"] {
+  border-style: none;
+  border-bottom: 1px solid #eee;
+  width: 75%;
+  font-size: 21px;
+  padding: 14px 7px;
+  text-align: left;
+
+}
+#contact [type="reset"] {
+  padding: 11px;
+  font-size: 21px;
+  border-style: none;
+  border-color: #18BC9C;
+  font-weight: 700;
+  float: left;
+  margin: 0 140px;
+  color: #fff;
+  background: #18BC9C;
+  border-radius: 9px;
 }
 /*FOOTER*/
 .light-green {
