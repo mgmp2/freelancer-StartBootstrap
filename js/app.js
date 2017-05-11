@@ -25,6 +25,6 @@ function screenSize(){
 
 }
 
-document.getElementById("js-modal").addEventListener("click", function(e){
-  e.toggle("modal");
-});
+// document.getElementById("js-modal").addEventListener("click", function(e){
+//   e.toggle("modal");
+// });

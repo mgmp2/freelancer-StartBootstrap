@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
  * {
    box-sizing: border-box;
    margin:0;
    padding: 0;
+   font-family: 'Lato', sans-serif;
  }
+ h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+}
  h1:first-child{
    cursor: pointer;
  }
@@ -208,4 +214,35 @@ hr {
 /*CONTACT ME */
 #contact * {
   text-align: center;
+}
+/*FOOTER*/
+.light-green {
+  color: #19B396;
+}
+footer {
+  padding: 21px 0 0 0   ;
+
+}
+footer * {
+  color: #fff;
+}
+footer h3 {
+  font-size: 24px;
+}
+footer p {
+  font-size: 20px;
+}
+footer > p {
+  padding: 21px 0;
+  background: #233140;
+  font-size: 14px;
+  line-height: 29px;
+}
+.col-4 > ul > li {
+  font-size: 23px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 50px;
+  height: 48px;
+  margin: 5px;
 }
