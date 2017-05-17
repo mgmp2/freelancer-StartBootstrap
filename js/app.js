@@ -50,13 +50,13 @@ var column = document.createElement("div");
 function screenSize(){
   document.getElementById("modal").firstElementChild.classList.add("modal");
   document.getElementById("body").classList.add("overflow");
-  // console.log(this.previousElementSibling);
   column.setAttribute("class", "col-12");
   column.appendChild(this.previousElementSibling);
   row.appendChild(column);
 
 }
 
-// document.getElementById("js-modal").addEventListener("click", function(e){
-//   e.toggle("modal");
-// });
+document.getElementById("js-close").addEventListener("click", function(e){
+  document.getElementById("modal").firstElementChild.classList.remove("modal");
+
+});

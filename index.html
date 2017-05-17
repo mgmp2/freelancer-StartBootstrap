@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Freelancer</title>
 	<!-- Enlaza aquí tu CSS común y de tu proyecto -->
+
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="body">
 	<!-- Escribe tu código aquí -->
@@ -112,7 +114,9 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-						<input type="button" value="Download Theme">
+					<a href="#">Download Theme
+						<span class="fa fa-download"></span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -130,19 +134,19 @@
 				<div class="row">
 					<div class="col-12">
 						<label for="name">Name</label>
-						<input type="text" placeholder="Name" value="">
+						<input type="text" placeholder="Name" value="" pattern="[a-zA-z]" required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
 						<label for="email">Email Address</label>
-						<input type="text" placeholder="Email Address" value="" placeholder="Email Address">
+						<input type="text" placeholder="Email Address" value="" placeholder="Email Address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"required="">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
 						<label for="phone">Phone Number</label>
-						<input type="text" placeholder="Phone Number" value="" placeholder="Phone Number">
+						<input type="text" placeholder="Phone Number" value="" placeholder="Phone Number"pattern="[1||2||3||4||5||6||7||8||9]" required>
 					</div>
 				</div>
 				<div class="row">
@@ -156,6 +160,7 @@
 						</div>
 				</div>
 			</div>
+		</div>
 		</form>
 	</div>
 	<footer class="container-fluid">
@@ -196,6 +201,7 @@
 		</div>
 		<p>Copyright &copy; Your Website 2016</p>
 	</footer>
+
 	<!-- Enlaza aquí tu archivo JS -->
 	<script type="text/javascript" src="js/app.js">	</script>
 </body>
